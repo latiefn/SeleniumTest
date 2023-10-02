@@ -9,11 +9,11 @@ public class GoogleSearchTest {
                 "/Users/latief/Downloads/chromedriver-mac-arm64/chromedriver");
 
         WebDriver driver = new ChromeDriver();
-        driver.get("https://www.google.com");
+        driver.get("https://www.google.com/");
 
         WebElement searchBox = driver.findElement(By.name("q"));
 
-        searchBox.sendKeys("Selenium WebDriver");
+        searchBox.sendKeys("Selenium");
 
         searchBox.submit();
 
